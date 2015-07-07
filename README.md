@@ -8,7 +8,8 @@ This nagios plugin checks the status of dcache pools with the following rules:
 For example:
 
 ```
-./check_movers.py --pools poolhost1_01,poolhost1_02 --server dcache-head.my.domain -w 0 -c 10
+./check_movers.py --pools poolhost1_01,poolhost1_02 \
+--server dcache-head.my.domain -w 0 -c 10
 ```
 
 will generate a *warning* if any mover is queued and a *critical* if more than 10.
